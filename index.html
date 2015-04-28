@@ -1,0 +1,128 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Assignment 1</title>
+<script type="text/javascript" src="jquery-1.11.2.js"></script>
+
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+<script type="text/javascript" src="script.js"></script>
+
+<script>
+</script>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+ 
+<body>
+<div id= "wrapper">
+   
+    <div class="accordion" id="accordionVertical">
+        <section id="edit">
+            <h3>Button Creator 1</h3>
+                <div id="formStyles">
+                <p>FONT:</p> 
+                    <button id="arial" class"aria" onclick="myFunction()" value="Arial">Arial</button>
+                    <button id="times" class="time" onclick="myFunction()" value="Times New Roman">Time New Roman</button>
+                    <button id="lucida" class="luc" onclick="myFunction()" value="Lucida">Lucida</button>
+                 </select>
+                 <br>
+                <p>TEXT COLOUR:</p> 
+                <select id="textcolor"> 
+                    <option id="red" value="Red">Red</option>
+                    <option id="green" value="Green">Green </option>
+                    <option id="blue" value="Blue">Blue </option>
+                 </select>
+                <br>
+                <br>
+                <br>
+                <label for="amount">SIZE OF FONT:</label>
+                <input type="text" id="textslider" style="border:0; color:#f6931f; font-weight:bold;">
+                <div class="slider" id="fontsize">
+                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 1%;"></span>
+                </div>
+                <br>
+                <br>
+                 <p>STYLE:</p>
+                <select id="styles"> 
+                    <option id="normal" value="Normal">Normal</option>
+                    <option id="italic" value="Italic">Italic</option>
+                 </select>
+                 <br>
+                 <br>
+                 <p>Weight:</p>
+                  <select id="weight"> 
+                    <option id="notbold" value="Not">Normal</option>
+                    <option id="bold" value="Bold">Bold</option>
+                 </select>
+                 <br>
+                 <br>
+                <label for="amount">PADDING:</label>
+                <input type="text" id="paddingslider" style="border:0; color:#f6931f; font-weight:bold;">
+                <div class="slider" id="textpadding">
+                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 1%;"></span>
+                </div>
+                <br>
+                <br>
+                <label for="amount">ROUNDNESS:</label>
+                <input type="text" id="cornerroundnessslider" style="border:0; color:#f6931f; font-weight:bold;">
+               <div class="slider" id="cornerroundness">
+               <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 1%;"></span>
+               </div>
+                <br>
+                <br>
+               <label for="amount">THICKNESS:</label>
+               <input type="text" id="borderslider" style="border:0; color:#A60002; font-weight:bold;">
+               <div class="slider" id="borderthickness">
+               <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 1%;"></span>
+               </div>
+                <br>
+                <br>
+                <select name="effects" id="effectTypes">
+  <option value="blind">Blind</option>
+  <option value="bounce">Bounce</option>
+  <option value="clip">Clip</option>
+  <option value="drop">Drop</option>
+  <option value="explode">Explode</option>
+  <option value="fold">Fold</option>
+  <option value="highlight">Highlight</option>
+  <option value="puff">Puff</option>
+  <option value="pulsate">Pulsate</option>
+  <option value="scale">Scale</option>
+  <option value="shake">Shake</option>
+  <option value="size">Size</option>
+  <option value="slide">Slide</option>
+</select>
+ 
+<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+<br>
+                <p>Border Colour:</p>
+                <select id="bordercolor"> 
+                    <option value="Red">Red</option>
+                    <option value="Green">Green </option>
+                    <option value="Blue">Blue </option>
+                 </select>
+                </div>
+                <br>
+                <br>
+               
+     <div id="editingtext">
+     <p>BUTTON NAME:</p>
+     <button type="text" name="firstname" id="inputOne" placeholder="Input Value" onClick="document.getElementById('display').value=document.getElementById('inputOne').value;" >
+              <input type="text" name="button1Name" id="button1Name" size="15" value="New Text" ></button>
+               </div>
+               
+     <div id="display">
+				<input type="button" value="nhuyhb" id="myButton1" style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif" onclick="javascript:replaceButtonText('myButton1', document.getElementById('button1Name').value);">
+                
+           </div>  
+           <input type="button" class="newButton" value="Create New Button">
+          </section>
+        
+        </div>
+        <div class="theStage" id="theStage"><p>Stage</p></div>
+        </div>
+</body>
+</html>
